@@ -1,0 +1,63 @@
+{% extends 'main.html' %}
+{% block content %}
+<script>
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(500)
+                        .height(500);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+    <!--? Contact form Start -->
+     <div class="contact-form-main">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-11 col-lg-11">
+                    <div class="form-wrapper">
+                        <!--Section Tittle  -->
+                        <div class="form-tittle">
+                            <div class="row ">
+                                <div class="col-xl-12">
+                                    <div class="section-tittle section-tittle2">
+                                        <span>Predict Malaria</span>
+                                        <h2>Upload the image of the cell</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Section Tittle  -->
+                        <form id="contact-form" action="{{ url_for('malariapredictPage') }}" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-box user-icon mb-30">
+                                        <input onchange="readURL(this);" type="file" name="image" placeholder="Upload Image">
+                                    </div>
+                                </div>
+                                <img class="img-fluid" id="blah" src="#" alt="UPLOADED IMAGE WILL APPEAR HERE" />
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div class="col-lg-12 ">
+                                    <div class="submit-info">
+                                        <button class="btn" type="submit" value="Predict">Predict Now <i class="ti-arrow-right"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact left Img-->
+        
+    </div>
+    <!-- Contact form End -->
+{% endblock %}

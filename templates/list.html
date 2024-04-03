@@ -1,0 +1,88 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="team-area section-padding30">
+    <div class="container">
+        <!-- Section Tittle -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-tittle text-center mb-100">
+                    <span>Our Services</span>
+                    <h2>What do you want to diagnose ?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team2.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('diabetesPage') }}">Diabetes Prediction Model</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team3.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('cancerPage') }}">Breast Cancer Prediction Model</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team1.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('heartPage') }}">Heart Disease Prediction Model</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team1.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('kidneyPage') }}">Chronic kidney disease Prediction Model</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team2.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('liverPage') }}">Liver disease Prediction Model</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team3.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('malariaPage') }}">Malaria Detection Model</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="/static/assets/img/gallery/team3.png" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="{{ url_for('pneumoniaPage') }}">Pneumonia Detection Model</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

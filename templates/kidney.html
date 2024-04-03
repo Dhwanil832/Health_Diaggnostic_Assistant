@@ -1,0 +1,164 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="contact-form-main">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-11 col-lg-11">
+                <div class="form-wrapper">
+                    <!--Section Tittle  -->
+                    <div class="form-tittle">
+                        <div class="row ">
+                            <div class="col-xl-12">
+                                <div class="section-tittle section-tittle2">
+                                    <span>Predict Kidney Disease</span>
+                                    <h2>Patient Details Form</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Section Tittle  -->
+                    <form id="contact-form" action="{{ url_for('predictPage') }}" method="POST">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="age" placeholder="Age (in years)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="blood_pressure" placeholder="bp">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="specific_gravity" placeholder="Specific Gravity">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="albumin" placeholder="Albumin">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="sugar" placeholder="Sugar (0, 1, 2, 3, 4, 5)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="red_blood_cells" placeholder="Red Blood Cells (0: Abnormal; 1: Normal)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="pus_cell" placeholder="Pus Cell (0: Abnormal; 1: Normal)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="pus_cell_clumps" placeholder="Pus Cell Clumps (0: Not Present; 1: Present)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="bacteria" placeholder="Bacteria (0: Not Present; 1: Present)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="blood_glucose_random" placeholder="Blood Glucose Random (in mgs/dl)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="blood_urea" placeholder="Blood Urea (in mgs/dl)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="serum_creatinine" placeholder="Serum Creatinine (in mgs/dl)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="sodium" placeholder="Sodium (in mEq/L)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="potassium" placeholder="Potassium (in mEq/L)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="haemoglobin" placeholder="Haemoglobin (in gms)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="packed_cell_volume" placeholder="Packed Cell Volume">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="white_blood_cell_count" placeholder="White Blood Cell Count (in cells/cumm)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="red_blood_cell_count" placeholder="Red Blood Cell Count (in millions/cmm)">
+                                </div>
+                            </div>        
+                            
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="hypertension" placeholder="Hypertension (0: No; 1: Yes)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="diabetes_mellitus" placeholder="Diabetes Mellitus (0: No; 1: Yes)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="coronary_artery_disease" placeholder="Coronary Artery Disease (0: No; 1: Yes)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box user-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="appetite" placeholder="Appetite (0: Good; 1: Poor)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="peda_edema" placeholder="Pedal Edema (0: No; 1: Yes)">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-box email-icon mb-30">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="aanemia" placeholder="Anemia (0: No; 1: Yes)">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 ">
+                                <div class="submit-info">
+                                    <button class="btn" type="submit" value="Predict">Predict Now <i class="ti-arrow-right"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact left Img-->
+    
+</div>
+{% endblock %}

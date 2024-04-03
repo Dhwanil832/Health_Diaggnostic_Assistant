@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="slider-area2">
+    <div class="slider-height2 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap hero-cap2 text-center">
+            {% if pred == 1 %}
+                <div class="card card-body alert alert-danger"><center>POSITIVE. The patient might have the disease.</center></div>
+            {% else %}
+                <div class="card card-body alert alert-success"><center>NEGATIVE. The patient is healthy.</center></div>
+            {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

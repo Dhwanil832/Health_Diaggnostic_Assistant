@@ -1,0 +1,205 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="department_area section-padding2">
+    <div class="container">
+        <!-- Section Tittle -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle text-center mb-100">
+                    <span>Our Models</span>
+                    <h2>Medical Fields We Can Help You With</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="depart_ment_tab mb-30">
+                    <!-- Tabs Buttons -->
+                    <ul class="nav" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="Diabetes-tab" data-toggle="tab" href="#Diabetes" role="tab" aria-controls="Diabetes" aria-selected="true">
+                                <i class="flaticon-teeth"></i>
+                                <h4>Diabetes</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Breast-tab" data-toggle="tab" href="#Breast" role="tab" aria-controls="Breast" aria-selected="false">
+                                <i class="flaticon-ear"></i>
+                                <h4>Breast Cancer</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Heart-tab" data-toggle="tab" href="#Heart" role="tab" aria-controls="Heart" aria-selected="false">
+                                <i class="flaticon-cardiovascular"></i>
+                                <h4>Heart Disease</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Kidney-tab" data-toggle="tab" href="#Kidney" role="tab" aria-controls="Kidney" aria-selected="false">
+                                <i class="flaticon-bone"></i>
+                                <h4>Kidney Disease</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Liver-tab" data-toggle="tab" href="#Liver" role="tab" aria-controls="Liver" aria-selected="false">
+                                <i class="flaticon-lung"></i>
+                                <h4>Liver Disease</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Malaria-tab" data-toggle="tab" href="#Malaria" role="tab" aria-controls="Malaria" aria-selected="false">
+                                <i class="flaticon-cell"></i>
+                                <h4>Malaria</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Pneumonia-tab" data-toggle="tab" href="#Pneumonia" role="tab" aria-controls="Pneumonia" aria-selected="false">
+                                <i class="flaticon-cell"></i>
+                                <h4>Pneumonia</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dept_main_info white-bg">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="Diabetes" role="tabpanel" aria-labelledby="Diabetes-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Diabetes</h3 >
+                                <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells. </p>
+                                <p><h3>Accuracy of Diabetes Prediction Model 98.25%</h3></p><br/>
+                                
+                                <a href="{{ url_for('diabetesPage') }}" class="dep-btn">Check for Diabetes<i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Breast" role="tabpanel" aria-labelledby="Breast-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Breast Cancer</h3 >
+                                <p>Breast cancer is cancer that forms in the cells of the breasts. After skin cancer, breast cancer is the most common cancer diagnosed in women in the United States. Breast cancer can occur in both men and women, but it's far more common in women. </p>
+                                <p><h3>Accuracy of Breast Cancer Prediction Model 98.25%</h3></p><br/>
+                                <a href="{{ url_for('cancerPage') }}" class="dep-btn">Check for Breast Cancer<i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Heart" role="tabpanel" aria-labelledby="Heart-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Heart Disease</h3 >
+                                <p>Heart disease, also known as cardiovascular disease, encompasses a range of conditions that affect the heart's functioning. It can include issues like coronary artery disease, heart rhythm problems, and congenital heart defects. Typically, heart disease arises from a combination of factors including high blood pressure, high cholesterol, smoking, diabetes, and genetic predispositions. Over time, these factors can damage the heart and blood vessels, leading to complications such as heart attacks, strokes, and heart failure. Proper management through lifestyle changes, medication, and sometimes surgery is crucial in preventing and treating heart disease.</p>
+                                <p><h3>Accuracy of Heart Disease Prediction Model 85.25%</h3></p><br/>
+                                <a href="{{ url_for('heartPage') }}" class="dep-btn">Check for Heart Disease<i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Kidney" role="tabpanel" aria-labelledby="Kidney-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Chronic kidney disease</h3 >
+                                <p>Chronic kidney disease, also called chronic kidney failure, describes the gradual loss of kidney function. Your kidneys filter wastes and excess fluids from your blood, which are then excreted in your urine. When chronic kidney disease reaches an advanced stage, dangerous levels of fluid, electrolytes and wastes can build up in your body. </p>
+                                <p><h3>Accuracy of Chronic kidney disease Prediction Model 99%</h3></p><br/>
+                                <a href="{{ url_for('kidneyPage') }}" class="dep-btn">Check for kidney Disease<i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Liver" role="tabpanel" aria-labelledby="Liver-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Liver Disease</h3 >
+                                <p>Symptoms of liver disease can vary, but they often include swelling of the abdomen and legs, bruising easily, changes in the color of your stool and urine, and jaundice, or yellowing of the skin and eyes. Sometimes there are no symptoms. Tests such as imaging tests and liver function tests can check for liver damage and help to diagnose liver diseases. </p>
+                                <p><h3>Accuracy of Liver disease Prediction Model 78%</h3></p><br/>
+                                <a href="{{ url_for('liverPage') }}" class="dep-btn">Check for kidney Disease<i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Malaria" role="tabpanel" aria-labelledby="Malaria-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Malaria</h3 >
+                                <p>Malaria is a mosquito-borne infectious disease that affects humans and other animals. Malaria causes symptoms that typically include fever, tiredness, vomiting, and headaches. In severe cases it can cause yellow skin, seizures, coma, or death. Symptoms usually begin ten to fifteen days after being bitten by an infected mosquito. If not properly treated, people may have recurrences of the disease months later. </p>
+                                <p><h3>Accuracy of Malaria Prediction Model 96%</h3></p><br/>
+                                <a href="{{ url_for('malariaPage') }}" class="dep-btn">Check for Malaria <i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Pneumonia" role="tabpanel" aria-labelledby="Pneumonia-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Pneumonia with surgical mask holding <br> scaler near patient</h3 >
+                                <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia. </p>
+                                <p><h3>Accuracy of Pneumonia Prediction Model 95%</h3></p><br/>
+                                <a href="{{ url_for('pneumoniaPage') }}" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="/static/assets/img/gallery/department_man.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
